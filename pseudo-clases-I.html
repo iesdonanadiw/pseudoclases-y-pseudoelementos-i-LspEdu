@@ -5,6 +5,57 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pseudo-clases</title>
+  <style>
+
+    body :not(h1){
+      color: #336699;
+    }
+
+    a:hover{
+      color:red;
+    }
+
+    a:active{
+      color:blue;
+    }
+
+    a:visited{
+      color:purple;
+    }
+
+    a{
+      color:pink;
+    }
+
+    div:hover{
+      border:1px solid black;
+    }
+    p i:first-child{
+      color:red;
+    }
+
+    form > input:focus{
+      background-color: lightblue;
+    }
+
+    input[type="radio"]:default{
+      box-shadow: 0px 0px 0px 1px   coral;
+    }
+
+    input:default + label{
+      border: 1px solid coral;
+    }
+  
+    input[type="number"]:in-range{
+      border: 2px solid green;
+    }
+
+    input[type="email"]:invalid{
+      border: 2px solid red;
+    }
+
+
+  </style>
 </head>
 <body>
   <!-- TODO: Todos lo que no sea un h1 debe tener el color de fuente #336699 -->
